@@ -1,111 +1,668 @@
+* {
+  box-sizing: border-box;
+  font-family: avenir,'sans-serif';
+}
+
+body,
+html {
+  min-height: 100%;
+
+}
+
+input,
+select,
+textarea,
+button {
+  /*font: #{$body-font-size}/1.4 $body-font;*/
+}
 
 body {
   background: #fff;
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
+  /*font: #{$body-font-size}/1.4 $body-font;*/
+  color: #000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+
+&:hover,
+&:active {
+   text-decoration: underline;
+ }
+}
+/*
+// Headings
+// --------------------------------------------------
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+h1 { font-size: 30px; }
+h2 { font-size: 21px; }
+h3 { font-size: 16px; }
+h4 { font-size: 14px; }
+h5 { font-size: 12px; }
+h6 { font-size: 11px; }
+/*
+// Lists
+// --------------------------------------------------
+*/
+ul,
+ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+ol ol,
+ul ol {
+  list-style-type: none;
+}
+
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+  list-style-type: none;
+}
+
+dd {
+  margin-left: 0;
+}
+
+img{
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/*
+
+$small-bp: 30em !default; // approx 480px
+$medium-bp: 40.063em !default; // approx 641px
+$large-bp: 80em !default; // approx 1280px
+$xlarge-bp: 90.063em !default; // approx 1441px;
+
+ */
+
+
+.contenedor__menu{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  min-height: 55px;
+}
+
+.contenedor__main_header {
+  height: 62vh;
   padding: 0;
 }
 
-.contenedor {
+.triangulo__flags_select{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8px;
+}
+
+.contenedor__menu_left{
+  display: flex;
+  width: 102px;
+  justify-content: space-around;
+  align-items: flex-end;
+  top: -4px;
+  position: relative;
+}
+
+.contenedor__main_header h1{
+  color: #fff;
+}
+
+.contenedor__main_header h3{
+  color: #fff;
+}
+
+.menu__left_bars{
+  font-size: 33px;
+  color: #004675;
+}
+
+.menu__left_logo{
+  height: 61px;
+  position: relative;
+  top: 13px;
+}
+
+.main__header_wrapper_title{
+  text-align: center;
+}
+
+.main__header_wrapper_title p{
+  color: #fefefe;
+  font-size: 34px;
+  font-weight: 600;
+  padding: 44px;
+}
+
+.main__header_wrapper_subtittle{
+  width: 87%;
+  max-width: 436px;
   margin: auto;
+  text-align: center;
+  position: relative;
+  top: -39px;
+  padding-top: 2px;
+}
+
+.main__header_wrapper_boton{
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor__bienvenida{
+  margin-top: 33px;
+}
+
+.contenedor__img_pulpo_bienvenida{
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor__img_pulpo_bienvenida img{
+  padding-left: 10px;
+}
+
+.bienvenido__parrafo{
+  color: #f18100;
+  font-size: 29px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.contenedor__bienvenido_parrafo{
+  padding-top: -20px;
+}
+
+.text_bienvenida__parrafo{
+  color: #36678b;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.contenedor__texto_bienvenida_parrafo{
+  padding-left: 31px;
+  padding-right: 31px;
+  position: relative;
+  top: -13px;
+}
+
+.main__header_wrapper_boton {
+  text-align: center;
+}
+
+.bienvenida__boton{
+  width: 265px;
+}
+
+.contenedor_garantia_de_calidad_slider{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -7px;
+}
+
+.contenedor_garantia_de_calidad_slider img{
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 188px;
+}
+
+.circulo_boton__carousel_mini_mobile{
+  width: 55px;
+  height: 55px;
+  position: relative;
+  top: 67px;
+}
+
+
+.arrow_left__icon_mobile{
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  left: 11px;
+}
+
+.arrow__rigth_icon_mobile{
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  left: 11px;
+}
+
+.garantia_de_calidad_slider__producto_de_calidad_parrafo{
+  text-align: center;
+  color: #f18100;
+  font-size: 25px;
+  font-weight: 900;
+  padding-bottom: 7px;
+}
+
+.garantia_de_calidad_slider__producto_parrafo{
+  color: #004b79;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+  position: relative;
+  top: -6px;
+}
+
+.contenedor__boton_garantia_de_calidad{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor__boton_garantia_de_calidad p{
+  font-size: 18px;
+  font-weight: bolder;
+  color: #fefefe;
+}
+
+.enlace{
+  text-decoration: none;
+}
+
+.contenedor__aquafrost_en_el_mundo{
+  background-color: #004b79;
+  padding-bottom: 57px;
+  padding-top: 16px;
+}
+
+.contenedor_aquafrost_en_el_mundo__parrafo{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  height: 97px;
+}
+
+.aquafrost_en_el_mundo__parrafo{
+  color: #f7ad01;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.aquafrost_en_el_mundo_descripcion__parrafo{
+  color: #f6f7f9;
+  text-align: center;
+}
+
+.contenedor_aquafros_en_el_mundo__banderas{
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor_auuafrost_en_el_mundo__flag span{
+  opacity: 0.7;
+  background-image: linear-gradient(30deg, #fff, #fff);
+}
+
+.contenedor__menu_rigth {
+  margin-right: 9px;
+  margin-top: 18px;
+}
+
+.main__header_wrapper_subtittle p {
+  font-size: 19px;
+  color: #fefefe;
+  margin-bottom: 19px;
+  font-weight: 300;
+}
+
+.triangulo_2 {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 8px solid #000;
 }
 
 header {
-  height: 100vh;
- /*  background:linear-gradient(rgba(84,93,220,.9),rgba(96,171,245,.9)),url('imagenes/fondo-home.jpg') left no-repeat;  */
-  background-size: cover;
-  margin-top: -145px;
+  max-width: 100%;
+}
+/*
+div { outline: 1px solid red !important; }
+*/
+
+
+.rectangulo__boton {
+  width: 189px;
+  height: 43px;
+  border-radius: 47px;
+  background-image: linear-gradient(90deg, #f29000, #f8bc33);
 }
 
+.rectangulo__boton p{
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
+  top: 1px;
+  color: #fff;
+}
 
-#contenedor-menu {
+.garantia_de_calidad__boton{
+  padding-top: 1px;
+  width: 242px;
+  height: 43px;
+}
+
+.main__header_wrapper_boton {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 32px;
 }
 
-header .logo {
-  color: #000;
-  font-size: 20px;
-  font-family: 'Righteous', cursive;
+.contenedor__main_header_content{
+  position: relative;
+  top: 10px;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
+.circulo_boton {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+  background-image: linear-gradient(360deg, #f29000, #f8bc33);
 }
 
-nav ul li {
-  margin-right: 23px;
-  list-style: none;
-  color: #000;
+.main__header_wrapper_mobon_bienvenida{
+  margin-top: 0px;
+  position: relative;
+  top: -6px;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #000;
-}
-
-.contenedor-titulo {
+.main__header_wrapper_circle {
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
-  margin: 18vh 0;
-  padding-top: 200px;
+  margin-top: 56px;
 }
 
-.contenedor-titulo h1 {
-  font-size: 60px;
-  color: #000;
-  margin-bottom: 0;
+.main__header_wrapper_subtittle img {
+  width: 220px;
+  margin-top: 4px;
 }
 
-.contenedor-titulo h2 {
-  font-size: 25px;
-  color: #000;
-  text-align: center;
-  margin-bottom: 40px;
+.contenedor__flags_select{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 3px;
 }
 
-.contenedor-titulo a {
-  width: 128px;
-  display: inline-block;
-  background: #5cb8ff;
-  font-size: 14px;
-  color: #000;
-  padding: 14px 24px;
-  border-radius: 5px;
+.arrow_down__icon{
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
 }
 
-.contenedor-titulo .titulo {
-  text-align: center;
+@media (min-width: 30em ) {
+
+  .contenedor__main_header{
+    height: 72vh;
+    position: relative;
+    top: -27px;
+  }
+
+  .main__header_wrapper_title p{
+    color: #fefefe;
+    font-size: 41px;
+    font-weight: 600;
+    padding: 70px;
+    position: relative;
+    top: -5px;
+  }
+
+  .main__header_wrapper_subtittle{
+    top: -124px;
+  }
+
+  .main__header_wrapper_subtittle img{
+    width: 307px;
+    padding-top: 15px;
+  }
+
+  .main__header_wrapper_subtittle .exportamos__parrafo{
+    font-size: 25px;
+  }
+
+  .contenedor__flags_select{
+    position: relative;
+    top: 3px;
+  }
+
+  .rectangulo__boton{
+    width: 296px;
+    height: 52px;
+  }
+
+  .contenedor__main_header_content{
+    top: 23px;
+  }
+
+  .main__header_wrapper_boton{
+    margin-top: 45px;
+  }
+
+  .circulo_boton{
+    width: 65px;
+    height: 65px;
+  }
+
+  .main__header_wrapper_circle{
+    padding-top: 25px;
+  }
+
+  .rectangulo__boton p{
+    font-size: 17px;
+  }
+
+  .arrow_down__icon{
+    font-size: 34px;
+    margin-top: 13px;
+  }
+
+  .img_pulpo_bienvenida__section {
+    height: 165px;
+    width: 96px;
+  }
+
+  .bienvenido__parrafo {
+    font-size: 34px;
+    text-align: center;
+    padding: 0px 128px 0px 128px;
+  }
+
+  .contenedor__bienvenida {
+    padding-top: 11px;
+  }
+
+  .text_bienvenida__parrafo{
+    line-height: 23pt;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .contenedor__texto_bienvenida_parrafo{
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+
+  .main__header_wrapper_mobon_bienvenida{
+    margin-top: 21px;
+  }
+
+  .bienvenida__boton{
+    width: 240px;
+  }
+
+  .garantia_de_calidad_slider__producto_de_calidad_parrafo{
+    font-size: 37px;
+  }
+
+  .contendor__garantia_de_calidad {
+    padding-top: 76px;
+    padding-bottom: 86px;
+  }
+  padding-bottom: 88px;
+
+  .contenedor_garantia_de_calidad_slider img{
+    width: 344px;
+  }
+
+  .circulo_boton__carousel_mini_mobile{
+    top: 118px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .arrow_left__icon_mobile{
+    font-size: 25px;
+    position: relative;
+    top: 7px;
+    left: 13px;
+  }
+
+  .arrow__rigth_icon_mobile{
+    font-size: 25px;
+    position: relative;
+    top: 7px;
+    left: 13px;
+  }
+
+  .garantia_de_calidad_slider__producto_parrafo{
+    top: -8px;
+    font-size: 25px;
+  }
+
+  .garantia_de_calidad__boton{
+    width: 347px;
+  }
+
+  .contenedor__aquafrost_en_el_mundo{
+    position: relative;
+    top: -20px;
+  }
+
+  .contenedor_aquafrost_en_el_mundo__parrafo{
+    padding: 0px 124px 0px 124px;
+    position: relative;
+    top: -9px;
+  }
+
+  .aquafrost_en_el_mundo__parrafo {
+    font-size: 33px;
+  }
+
+  .contenedor_aquafrost_en_el_mundo_descripcion__parrafo{
+    padding: 4px 35px 0px 35px;
+    position: relative;
+    top: -3px;
+  }
+
+  .aquafrost_en_el_mundo_descripcion__parrafo{
+    line-height: 19pt;
+    font-size: 19px;
+  }
+
+  .contenedor_auuafrost_en_el_mundo__flag{
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .porque_elegirnos_wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -9px;
+  }
+
+  .porque_elegirnos_wrapper img{
+    width: 241px;
+  }
+  .contenedor__porque_elegirnos{
+    padding: 0px 25px 0px 25px;
+  }
+
+  .contenedor__porque_elegirnos p{
+    text-align: center;
+    //color: #004b79;
+  }
+
+  .contenedor_aquafros_en_el_mundo__banderas{
+    padding-top: 8px;
+  }
+
+  .porque_elegirnos__parrafo{
+    font-size: 38px;
+    color: #f29000;
+    font-weight: 900;
+  }
+
+  .porque_elegirnos_wrapper_title__parrafo{
+    font-size: 28px;
+    color: #f29000;
+    font-weight: 900;
+    position: relative;
+    top: -3px;
+  }
+
+  .text_porque_elegirnos_descripcion_wrapper__parrafo{
+    line-height: 21pt;
+    font-size: 20px;
+    font-weight: 500;
+    color: #36678b;
+    position: relative;
+    top: -40px;
+    padding: 6px 40px 0px 40px;
+  }
+
+  .text__porque_elegirnos_descripcion__parrafo{
+    padding: 6px 26px 0px 26px;
+  }
+
+  .carousel carousel-slider .control-arrow control-next{
+    background: aqua;
+    padding-right: 80px;
+  }
 }
 
-.menu {
-  position: fixed;
-  width: 100%;
-  transition: .3s;
-  z-index: 999;
-  background: #fff;
-  opacity: .8;
+
+@media (min-width: 40.063em ) {
+
 }
 
-.menu__center_nav {
-  padding-right: 289px;
+@media (min-width: 80em ) {
+
 }
 
-.rectangulo {
-  width: 237px;
-  height: 35px;
-  background: #004b8d;
-  border-radius: 25px;
-  opacity: .9;
-}
+@media (min-width: 90.063em ) {
 
-.menu__ul_center_nav {
-  margin-top: 19px;
-}
-
-.menu__ul_rigth_nav {
-  margin-top: 9px;
 }
