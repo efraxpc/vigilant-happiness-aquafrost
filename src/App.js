@@ -9,9 +9,10 @@ import pulpinImage from './pulpin.png'
 import razonCalidadImg from './razon_calidad_img.png'
 import razonMedioambienteImg from './razon_medioambiente_img.png'
 import razonPescadoYSaludImg from './razon_pescado_y_salud_img.png'
+import aquafrostLogoCompletoImg from './aquafrost_logo_completo.png'
 import ReactCountryFlag from "react-country-flag";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faBars, faArrowDown, faArrowLeft, faArrowRight} from '@fortawesome/free-solid-svg-icons'
+import {faBars, faArrowDown, faChevronDown, faChevronRight} from '@fortawesome/free-solid-svg-icons'
 
 class App extends Component {
 
@@ -51,9 +52,9 @@ class App extends Component {
                                 <p className={'exportamos__parrafo'}>Exportamos a más de 15 países</p>
                                 <img src={ueImage} alt="imagen UE"/>
                                 <div className={'main__header_wrapper_boton'}>
-                                    <div className="rectangulo__boton">
+                                    <div className="rectangulo__boton rectangulo__boton_main_header">
                                         <a href="#" className="enlace" onClick={(e)=>e.preventDefault}>
-                                            <p>Nuestros Servicios ></p>
+                                            <p>Nuestros Servicios <FontAwesomeIcon icon={faChevronRight} className={'arrow_rigth_chevron_boton_main_header'}/></p>
                                         </a>
                                     </div>
                                 </div>
@@ -84,35 +85,11 @@ class App extends Component {
                     <div className={'main__header_wrapper_boton main__header_wrapper_mobon_bienvenida'}>
                         <div className="rectangulo__boton bienvenida__boton">
                             <a href="#" className={'enlace'}>
-                                <p>Conócenos ></p>
+                                <p>Conócenos <FontAwesomeIcon icon={faChevronRight} className={'arrow_rigth_chevron_boton_bienvenida'}/></p>
                             </a>
                         </div>
                     </div>
                 </section>
-                {/*<section className={'contendor__garantia_de_calidad'}>
-                    <p className={'garantia_de_calidad_slider__producto_de_calidad_parrafo'}>Garantía de calidad</p>
-                    <div className="contenedor_garantia_de_calidad_slider">
-                        <div className="circulo_boton circulo_boton__carousel_mini_mobile">
-                            <a href="#" className={'enlace'}>
-                                <FontAwesomeIcon icon={faArrowLeft} className={'arrow_left__icon_mobile'}/>
-                            </a>
-                        </div>
-                        <img src={carouselMiniMobileImg1} alt="carousel_mini_mobile_img1"/>
-                        <div className="circulo_boton circulo_boton__carousel_mini_mobile">
-                            <a href="#" className={'enlace'}>
-                                <FontAwesomeIcon icon={faArrowRight} className={'arrow__rigth_icon_mobile'}/>
-                            </a>
-                        </div>
-                    </div>
-                    <p className={'garantia_de_calidad_slider__producto_parrafo'}>Producto Uno</p>
-                    <div className={'contenedor__boton_garantia_de_calidad'}>
-                        <div className="rectangulo__boton garantia_de_calidad__boton ">
-                            <a href="#" className={'enlace'}>
-                                <p>Ver todos los productos ></p>
-                            </a>
-                        </div>
-                    </div>
-                </section>*/}
                 <section className={'contendor__garantia_de_calidad'}>
                     <p className={'garantia_de_calidad_slider__producto_de_calidad_parrafo'}>Garantía de calidad</p>
                     <div className="contenedor_garantia_de_calidad_slider">
@@ -122,7 +99,7 @@ class App extends Component {
                     <div className={'contenedor__boton_garantia_de_calidad'}>
                         <div className="rectangulo__boton garantia_de_calidad__boton ">
                             <a href="#" className={'enlace'} onClick={(e)=>e.preventDefault}>
-                                <p>Ver todos los productos ></p>
+                                <p>Ver todos los productos <FontAwesomeIcon icon={faChevronRight} className={'arrow_rigth_chevron_boton_garantia_de_calidad'}/></p>
                             </a>
                         </div>
                     </div>
@@ -197,7 +174,40 @@ class App extends Component {
                         <p className={'porque_elegirnos_wrapper_title__parrafo'}>Pescado y salud</p>
                         <p className={'text_porque_elegirnos_descripcion_wrapper__parrafo text__porque_elegirnos_descripcion__parrafo'}>En Oversea nos preocupa su salud.<br/> El pescado es un componente que <br/> debe estar presenteen nuestra dieta, <br/> ya que nos aporta proteínas de gran <br/> calidad, vitaminas y minerales.</p>
                     </div>
+                    <div className={'contenedor__boton_conoce_un_poco_mas'}>
+                        <div className="rectangulo__boton conoce_un_poco_mas__boton ">
+                            <a href="#" className={'enlace'} onClick={(e)=>e.preventDefault}>
+                                <p>Conoce un poco más <FontAwesomeIcon icon={faChevronRight} className={'arrow_rigth_chevron_boton_aquafrost_todos_los_derechos_reservados'}/></p>
+                            </a>
+                        </div>
+                    </div>
                 </section>
+                <footer className={'contenedor_aquafrost_todos_los_derechos_reservados'}>
+                    <img src={aquafrostLogoCompletoImg} alt="aquafrostLogoCompletoImg" className={'img_aquafrost_logo_completo'}/>
+                    <p>Todos los derechos reservados</p>
+                    <div className="contenedor_textos_enlaces_footer">
+                        <div className="contenedor_sub_textos_enlaces_footer">
+                            <p>Servicios</p>
+                            <FontAwesomeIcon icon={faChevronDown} className={'arrow_rigth_chevron_boton_garantia_de_calidad'}/>
+                        </div>
+                        <div className="contenedor_sub_textos_enlaces_footer">
+                            <p>Empresa</p>
+                            <FontAwesomeIcon icon={faChevronDown} className={'arrow_rigth_chevron_boton_garantia_de_calidad'}/>
+                        </div>
+                        <div className="contenedor_sub_textos_enlaces_footer">
+                            <p>Mercados</p>
+                            <FontAwesomeIcon icon={faChevronDown} className={'arrow_rigth_chevron_boton_garantia_de_calidad'}/>
+                        </div>
+                        <div className="contenedor_sub_textos_enlaces_footer">
+                            <p>Blog</p>
+                            <FontAwesomeIcon icon={faChevronDown} className={'arrow_rigth_chevron_boton_garantia_de_calidad'}/>
+                        </div>
+                        <div className="contenedor_sub_textos_enlaces_footer">
+                            <p>Contacto</p>
+                            <FontAwesomeIcon icon={faChevronDown} className={'arrow_rigth_chevron_boton_garantia_de_calidad'}/>
+                        </div>
+                    </div>
+                </footer>
             </React.Fragment>
         );
     }

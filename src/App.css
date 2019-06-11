@@ -475,7 +475,7 @@ div { outline: 1px solid red !important; }
   }
 
   .main__header_wrapper_circle{
-    padding-top: 25px;
+    padding-top: 33px;
   }
 
   .rectangulo__boton p{
@@ -521,6 +521,11 @@ div { outline: 1px solid red !important; }
     width: 240px;
   }
 
+  .bienvenida__boton a p{
+    position: relative;
+    top: -5px;
+  }
+
   .garantia_de_calidad_slider__producto_de_calidad_parrafo{
     font-size: 37px;
   }
@@ -562,6 +567,11 @@ div { outline: 1px solid red !important; }
 
   .garantia_de_calidad__boton{
     width: 347px;
+  }
+
+  .garantia_de_calidad__boton a p{
+    position: relative;
+    top: -6px;
   }
 
   .contenedor__aquafrost_en_el_mundo{
@@ -651,6 +661,98 @@ div { outline: 1px solid red !important; }
   .carousel carousel-slider .control-arrow control-next{
     background: aqua;
     padding-right: 80px;
+  }
+
+  .contenedor_aquafrost_todos_los_derechos_reservados{
+    background-color: #004b79;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img_aquafrost_logo_completo{
+    padding: 26px 0px 0px 0px;
+    width: 243px;
+    height: 98px;
+  }
+
+  .contenedor__boton_conoce_un_poco_mas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -16px;
+    padding-bottom: 134px;
+  }
+
+  .conoce_un_poco_mas__boton{
+    width: 338px;
+  }
+
+  .conoce_un_poco_mas__boton a p{
+    position: relative;
+    top: -6px;
+  }
+
+  .contenedor_aquafrost_todos_los_derechos_reservados p {
+    color: #e0e5eb;
+    position: relative;
+    top: -15px;
+  }
+
+  .arrow_rigth_chevron_boton_garantia_de_calidad{
+    font-size: 24px;
+    position: relative;
+    top: 3px;
+    left: 7px;
+  }
+
+  .arrow_rigth_chevron_boton_aquafrost_todos_los_derechos_reservados{
+    font-size: 24px;
+    position: relative;
+    top: 3px;
+    left: 7px;
+  }
+
+  .arrow_rigth_chevron_boton_bienvenida{
+    font-size: 24px;
+    position: relative;
+    top: 3px;
+    left: 7px;
+  }
+
+  .rectangulo__boton_main_header a p{
+    position: relative;
+    top: -4px;
+  }
+
+  .arrow_rigth_chevron_boton_main_header{
+    font-size: 24px;
+    position: relative;
+    top: 3px;
+    left: 7px;
+  }
+
+  .contenedor_sub_textos_enlaces_footer{
+    min-width: 441px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contenedor_sub_textos_enlaces_footer p{
+    color: #eaa70f;
+    font-size: 20px;
+  }
+
+  .contenedor_sub_textos_enlaces_footer svg{
+    color: #eaa70f;
+    font-size: 25px;
+  }
+
+  .contenedor_textos_enlaces_footer{
+    padding-top: 16px;
   }
 }
 
