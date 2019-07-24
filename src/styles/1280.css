@@ -1,0 +1,284 @@
+@media (min-width: 80em) {
+    .contenedor__menu {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        opacity: .9;
+        height: 85px;
+    }
+    .contenedor__main_header {
+        z-index: 10;
+        top: -41px;
+    }
+    .contenedor__menu_left {
+        display: none;
+    }
+    .contenedor_header_logo_menu_grande {
+        display: flex;
+        position: relative;
+        min-width: 100%;
+        padding-right: 69px;
+        padding-left: 21px;
+    }
+    .contenedor_header_logo_menu_grande nav ul {
+        display: flex;
+    }
+    .contenedor_header_logo_menu_grande nav ul li {
+        display: flex;
+    }
+    .triangulo_header_menu {
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 8px solid #000;
+    }
+    .rectangulo__boton_main_header_grande {
+        display: flex;
+        height: 38px;
+        margin-left: 152px;
+        background-image: linear-gradient(100deg, #004675, #0076c6);
+        margin-right: 18px;
+        opacity: .9;
+    }
+    .rectangulo__boton_main_header_grande div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 0px;
+        margin-left: 17px;
+    }
+    .rectangulo__boton_main_header_grande p {
+        font-size: 20px
+    }
+    .rectangulo__boton_main_header_grande div span {
+        padding-top: 6px;
+    }
+    .rectangulo__boton_main_header_grande div img {
+        padding-top: 13px;
+    }
+    .rectangulo__boton_main_header_grande nav {
+        padding-top: 32px;
+    }
+    .whatsapp_icon_header {
+        color: #e0e5eb;
+        font-size: 27px;
+        margin-bottom: 6px
+    }
+    .rectangulo__boton div .tel_peru_code_parrafo {
+        color: #eaa70f;
+    }
+    .rectangulo__boton div .tel_numero_parrafo {
+        padding-left: 6px;
+    }
+    .contenedor__menu_rigth {
+        margin-top: 9px;
+        margin-right: 70px;
+        position: relative;
+        right: 65px;
+    }
+    .contenedor__flags_select {
+        top: 14px;
+    }
+    .triangulo_2 {
+        border-top: 8px solid #eaa70f;
+    }
+    .triangulo_2_flag_selector {
+        border-top: 8px solid #000;
+    }
+    .contenedor_header_logo_menu_grande nav ul li p {
+        font-size: 19px;
+        font-weight: 800;
+        color: #004675;
+    }
+    .contenedor_header_logo_menu_grande nav {
+        position: relative;
+        left: 55px;
+        margin-top: 32px;
+    }
+    .contenedor_header_logo_menu_grande nav ul li {
+        padding-right: 30px;
+    }
+    .contenedor_header_logo_menu_grande nav ul li span {
+        font-weight: 800;
+        color: #004675;
+        font-size: 19px;
+    }
+    .contenedor_header_logo_menu_grande div img {
+        min-width: 132%;
+        padding-right: 86px;
+        margin-top: 11px;
+    }
+    .contenedor_header_logo_menu_grande .rectangulo__boton_main_header_grande {
+        margin-top: 23px;
+    }
+    .enlace {
+        position: relative;
+        right: 2px;
+        margin-top: 0px;
+    }
+    .contenedor__main_header {
+        display: none;
+    }
+    .contenedor__main_header_grande {
+        display: block;
+        position: relative;
+        top: -51px;
+    }
+    .main__header_wrapper_title {
+        position: relative;
+        top: 84px;
+        text-align: left;
+        right: 0;
+        left: 105px;
+        width: 900px;
+    }
+    .main__header_wrapper_title p {
+        font-size: 49px;
+        font-weight: 800;
+    }
+    .container_slider {
+        max-height: 100px;
+    }
+    .main__header_wrapper_subtittle {
+        position: relative;
+        top: -32px;
+        right: 280px;
+    }
+    .rectangulo__boton rectangulo__boton_main_header {
+        position: relative;
+        top: -23px;
+        right: 29px;
+    }
+    .main__header_wrapper_boton {
+        position: relative;
+        right: 71px;
+        top: -22px;
+    }
+    .rectangulo__boton_main_header {
+        width: 226px;
+        height: 37px;
+    }
+    .rectangulo__boton_main_header a p {
+        top: -12px
+    }
+    .main__header_wrapper_subtittle .exportamos__parrafo {
+        font-size: 20px;
+        right: 43px;
+    }
+    .rectangulo__boton p {
+        font-size: 15px;
+    }
+    .slick-list {
+        height: 585px;
+    }
+    .main__header_wrapper_subtittle img {
+        padding-top: 0px;
+    }
+    .contenedor_sello_header {
+        position: relative;
+        top: -203px;
+        left: 815px;
+    }
+    .circulo_boton {
+        display: none;
+    }
+    .circulo_boton_header_grande {
+        float: right;
+        position: relative;
+        right: 190px;
+        top: -29px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-image: linear-gradient(360deg, #f29000, #f8bc33);
+        display: flex;
+        justify-content: center;
+    }
+    .circulo_boton_header_grande a p {
+        position: relative;
+        top: -4px;
+        left: 2px;
+    }
+    .contenedor_sello_header p {
+        float: left;
+        position: relative;
+        top: 13px;
+        font-weight: 900;
+        font-size: 17px;
+    }
+    .arrow_down__icon {
+        font-size: 30px;
+        top: -1;
+    }
+    .contenedor__img_pulpo_bienvenida img {
+        position: relative;
+        right: 327px;
+        height: 242px;
+        width: 151px;
+    }
+    .contenedor__bienvenido_parrafo {
+        position: relative;
+        top: -292px;
+        width: 623px;
+        left: 297px;
+    }
+    .contenedor__texto_bienvenida_parrafo {
+        position: relative;
+        top: -287px;
+    }
+    .main__header_wrapper_mobon_bienvenida {
+        top: -275px;
+        position: relative;
+        right: 118px;
+    }
+    .contenedor__bienvenida {
+        height: 265px;
+    }
+    .bienvenido__parrafo {
+        font-size: 49px;
+        font-weight: 900;
+        line-height: 47px;
+        top: 20px;
+        position: relative;
+        text-align: left;
+        right: 14px;
+    }
+    .text_bienvenida__parrafo {
+        display: none;
+    }
+    .text_bienvenida__parrafo_pantalla_grande {
+        text-align: left;
+        position: relative;
+        left: 307px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+        width: 674px;
+        right: 0px;
+    }
+    .bienvenida__boton {
+        height: 49px;
+        width: 206px;
+        position: relative;
+        right: 14px;
+    }
+    .contenedor_garantia_de_calidad_slider {
+        display: none;
+    }
+    .contendor__garantia_de_calidad {
+        background-color: #EFF1F2;
+        position: relative;
+        top: 136px;
+    }
+    .garantia_de_calidad_slider__producto_parrafo {
+        display: none;
+    }
+    .contenedor_slider_garantia_de_calidad_pantalla_grande{
+        display: block;
+      }
+}
